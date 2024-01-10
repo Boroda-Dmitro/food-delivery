@@ -18,7 +18,6 @@ export const fetchPizza = createAsyncThunk(
 export const getPizza = async () => {
   try {
     const response = await axios.get(`/api/pizza`);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     return error.message;

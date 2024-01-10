@@ -1,5 +1,11 @@
+import { Container } from "../../components/App.styled";
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <Container>
+      <h1>Home</h1>;
+    </Container>
+  );
 };
 
 export default Home;
