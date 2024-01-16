@@ -1,10 +1,58 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchPizza } from "../operations/oprations";
 
-
+const initialPizzas = [
+  {
+    _id: "1",
+    name: "Маргарита",
+    ingredients: [
+      "Тісто",
+      "Помідори ",
+      "Моцарелла ",
+      "Оливкова олія",
+      "Базилік ",
+      "Томатний соус",
+      "Сіль і перець",
+    ],
+    image: "margarita",
+    price: "150",
+    discount: false,
+  },
+  {
+    _id: "2",
+    name: "Пепероні",
+    ingredients: [
+      "Тісто",
+      "Пепероні",
+      "Томатний соус",
+      "Сир",
+      "Оливкова олія",
+      "Сіль і перець",
+    ],
+    image: "pepperoni",
+    price: "170",
+    discount: false,
+  },
+  {
+    _id: "3",
+    name: "Гавайська",
+    ingredients: [
+      "Тісто",
+      "Курка",
+      "Ананаси",
+      "Томатний соус",
+      "Сир",
+      "Оливкова олія",
+      "Сіль і перець",
+    ],
+    image: "hawaiian",
+    price: "180",
+    discount: false,
+  },
+];
 
 const pizza = {
-  items: [],
+  items: initialPizzas,
   isLoading: false,
   error: null,
 };

@@ -15,11 +15,14 @@ export const fetchPizza = createAsyncThunk(
   }
 );
 
-export const getPizza = async () => {
-  try {
-    const response = await axios.get(`/api/pizza`);
-    return response.data;
-  } catch (error) {
-    return error.message;
+export const fetchOrders = createAsyncThunk(
+  "orders/getOrders",
+  async (_, thunkAPI) => {
+    try {
+      const response = await axios.get(`/api/orders`);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-};
+);

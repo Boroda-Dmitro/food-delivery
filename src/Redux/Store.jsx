@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 // import { contactSlice } from '../Redux/Contacts/Slice';
 import { pizzaSlice } from '../Redux/Pizza/Slice';
+import { basketSlice } from './Basket/Slise';
 
 // import { userSlice } from '../Redux/User/Slice';
 import {
@@ -26,7 +27,7 @@ import {
 export const store = configureStore({
   reducer: {
     pizza: pizzaSlice.reducer,
-    
+    basket: basketSlice.reducer
     // userState: persistedReducer,
   },
   middleware: (getDefaultMiddleware) =>

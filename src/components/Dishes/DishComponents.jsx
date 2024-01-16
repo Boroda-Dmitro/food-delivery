@@ -40,3 +40,11 @@ export const ToBasket = ({ onClick }) => {
     </BasketButton>
   );
 };
+
+export const RemoveFromBasket = ({ onClick }) => {
+  return (
+    <BasketButton onClick={onClick}>
+      Передумав
+    </BasketButton>
+  );
+};

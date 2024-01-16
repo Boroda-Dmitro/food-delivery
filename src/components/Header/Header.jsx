@@ -18,6 +18,9 @@ export const Header = () => {
             Pizza
           </StyledLink>
         </nav>
+        <StyledLink to="/Basket" aria-label="Basket">
+          Basket
+        </StyledLink>
       </HeaderBox>
     </Container>
   );
