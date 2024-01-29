@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { DishList } from "../../components/Dishes/DishList";
 import { Container } from "../../components/App.styled";
 
-const Pizza = () => {
+const Burger = () => {
   const dispatch = useDispatch();
   const dishes = useSelector((state) => state.pizza.items);
-  const pizzaState = dishes.filter((item) => item.type === "pizza");
+  const burgerState = dishes.filter((item) => item.type === "burger");
 
   useEffect(() => {
     dispatch(fetchPizza());
@@ -16,9 +16,9 @@ const Pizza = () => {
   return (
     <Container>
       <h1>Pizza</h1>
-      <DishList dishes={pizzaState} />
+      <DishList dishes={burgerState} />
     </Container>
   );
 };
 
-export default Pizza;
+export default Burger;

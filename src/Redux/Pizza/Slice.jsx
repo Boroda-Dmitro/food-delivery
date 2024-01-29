@@ -17,6 +17,7 @@ const initialPizzas = [
     image: "margarita",
     price: "150",
     discount: false,
+    type: "pizza",
   },
   {
     _id: "2",
@@ -32,6 +33,7 @@ const initialPizzas = [
     image: "pepperoni",
     price: "170",
     discount: false,
+    type: "pizza",
   },
   {
     _id: "3",
@@ -48,6 +50,7 @@ const initialPizzas = [
     image: "hawaiian",
     price: "180",
     discount: false,
+    type: "pizza",
   },
 ];
 

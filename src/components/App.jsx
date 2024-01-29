@@ -7,6 +7,8 @@ import Basket from "../Pages/Basket/Basket.jsx";
 
 const Home = lazy(() => import("../Pages/Home/Home.jsx"));
 const Pizza = lazy(() => import("../Pages/Pizza/Pizza.jsx"));
+const Sushi = lazy(() => import("../Pages/Sushi/Sushi.jsx"));
+const Burger = lazy(() => import("../Pages/Burger/Burger.jsx"));
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Pizza" element={<Pizza />} />
+        <Route path="/Sushi" element={<Sushi />} />
+        <Route path="/Burger" element={<Burger />} />
         <Route path="/Basket" element={<Basket />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Route>
